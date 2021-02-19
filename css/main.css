@@ -1,0 +1,58 @@
+body {
+    font-family: Palatino;
+  }
+  
+  .form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-item {
+    margin-right: 1.8rem;
+  }
+  
+  label.primary {
+    display: block;
+    margin: 0.4em 0;
+  }
+  
+  label::after {
+    content: ":";
+  }
+  
+  button, input[type="submit"] {
+    margin-top: 1rem;
+  }
+
+  button, input[type="delete-all-button"] {
+    margin-top: 1rem;
+  }
+  
+  #fav-foods-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  
+  .fav-foods-list-item {
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #20437c;
+    border-radius: 5%;
+    background: #ddeaff;
+  }
+
+  .form-options-top {
+      display: flex;
+  }
+
+  .form-options-mid {
+      display: flex;
+      align-items: center;
+      
+  }
+
+  .radio-option {
+    padding-left: 20px;
+  }
