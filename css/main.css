@@ -1,5 +1,6 @@
 body {
     font-family: Palatino;
+    text-align: center;
   }
   
   .form-wrapper {
@@ -29,13 +30,13 @@ body {
     margin-top: 1rem;
   }
   
-  #fav-foods-list {
+  #pizza-list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
   }
   
-  .fav-foods-list-item {
+  .pizza-list-item {
     margin: 0.5rem 0.5rem;
     padding: 0.5rem 0.8rem;
     border: 1px solid #20437c;
@@ -45,14 +46,25 @@ body {
 
   .form-options-top {
       display: flex;
+      justify-content: center;
   }
 
   .form-options-mid {
       display: flex;
       align-items: center;
+      justify-content: center;
       
   }
 
   .radio-option {
     padding-left: 20px;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    background-image: url(images/pizza-header.jpg);
+    background-size: auto 200px;
   }

@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favourite Foods</title>
+    <title>Pizza's!</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="js/app.js"></script>
 </head>
     <body>
         <header>
-            <h1>My Favourite Foods</h1>
+            <h1>Pizza's</h1>
         </header>
         <form id="new-item-form">
             <div id="form-wrapper">
                 <section class="form-options-top">
                     <div class="form-item">
-                        <label for="food_name" class="primary">Food Name</label>
-                        <input type="text" id="food_name" required/>
+                        <label for="pizza_name" class="primary">Pizza Name</label>
+                        <input type="text" id="pizza_name" required/>
                     </div>
 
                     <div class="form-item">
-                        <label for="cooked_by" class="primary">Cooked By</label>
-                        <input type="text" id="cooked_by" required/>
+                        <label for="toppings" class="primary">Toppings</label>
+                        <input type="text" id="toppings" required/>
                     </div>
 
                     <div class="form-item">
-                        <label for="category" class="primary">Category</label>
-                        <select id="category">
+                        <label for="base" class="primary">Base</label>
+                        <select id="base">
                             <option value="" disabled selected></option>
-                            <option value="Breakfast">Breakfast</option>
-                            <option value="Lunch">Lunch</option>
-                            <option value="Dinner">Dinner</option>
-                            <option value="Dessert">Dessert</option>
-                            <option value="Snack">Snack</option>
+                            <option value="Thin & Crispy">Thin & Crispy</option>
+                            <option value="Classic">Classic</option>
+                            <option value="Deep Pan">Deep Pan</option>
                         </select>
                     </div>
                 </section>
@@ -43,21 +41,21 @@
                         <h3>Select Rating:</h3>
 
                         <div class="radio-option">
-                            <input type="radio" id="rating1"
-                            name="rating" value="Insanley Good">
-                            <label for="contactChoice1">Insanley Good</label>
+                            <input type="radio" id="sauce1"
+                            name="sauce" value="Tomato">
+                            <label for="contactChoice1">Tomato</label>
                         </div>
 
                         <div class="radio-option">
-                            <input type="radio" id="rating2"
-                            name="rating" value="Very Good">
-                            <label for="contactChoice2">Very Good</label>
+                            <input type="radio" id="sauce2"
+                            name="sauce" value="White">
+                            <label for="contactChoice2">White</label>
                         </div>
     
                         <div class="radio-option">
-                            <input type="radio" id="rating3"
-                            name="rating" value="Good">
-                            <label for="contactChoice3">Good</label>
+                            <input type="radio" id="sauce3"
+                            name="sauce" value="BBQ">
+                            <label for="contactChoice3">BBQ</label>
                         </div>
                     </div>
                 </div>
@@ -71,8 +69,8 @@
         </form>
 
         <main>
-            <h2>Favourite Foods List</h2>
-            <ul id="fav-foods-list"></ul>
+            <h2>Pizza List</h2>
+            <ul id="pizza-list"></ul>
         </main>
 
         <div class="delete-all-button">

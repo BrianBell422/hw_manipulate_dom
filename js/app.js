@@ -9,37 +9,37 @@ document.addEventListener('DOMContentLoaded', () => {
 const handleNewItemFormSubmit = function (event) {
     event.preventDefault();
 
-    const favFoodListItem = createFavFoodListItem(event.target);
-    const favFoodList = document.querySelector('#fav-foods-list');
-    favFoodList.appendChild(favFoodListItem);
+    const pizzaListItem = createPizzaListItem(event.target);
+    const pizzaList = document.querySelector('#pizza-list');
+    pizzaList.appendChild(pizzaListItem);
 
     event.target.reset();
 }
 
-const createFavFoodListItem = function (form) {
-    const favFoodListItem = document.createElement('li');
-    favFoodListItem.classList.add('fav-foods-list-item');
+const createPizzaListItem = function (form) {
+    const pizzaListItem = document.createElement('li');
+    pizzaListItem.classList.add('pizza-list-item');
 
-    const food_name = document.createElement('h2');
-    food_name.textContent = form.food_name.value;
-    favFoodListItem.appendChild(food_name);
+    const pizza_name = document.createElement('h2');
+    pizza_name.textContent = form.pizza_name.value;
+    pizzaListItem.appendChild(pizza_name);
 
-    const cooked_by = document.createElement('h3');
-    cooked_by.textContent = form.cooked_by.value;
-    favFoodListItem.appendChild(cooked_by);
+    const toppings = document.createElement('p');
+    toppings.textContent = form.toppings.value;
+    pizzaListItem.appendChild(toppings);
 
-    const category = document.createElement('p');
-    category.textContent = form.category.value;
-    favFoodListItem.appendChild(category);
+    const base = document.createElement('h3');
+    base.textContent = form.base.value;
+    pizzaListItem.appendChild(base);
 
-    const rating = document.createElement('p');
-    rating.textContent = form.rating.value;
-    favFoodListItem.appendChild(rating);
+    const sauce = document.createElement('p');
+    sauce.textContent = form.sauce.value;
+    pizzaListItem.appendChild(sauce);
 
-  return favFoodListItem;
+  return pizzaListItem;
 }
 
 const handleDeleteAllClick = function (event) {
-    const favFoodList = document.querySelector('#fav-foods-list');
-    favFoodList.textContent = '';
+    const pizzaList = document.querySelector('#pizza-list');
+    pizzaList.textContent = '';
   }
